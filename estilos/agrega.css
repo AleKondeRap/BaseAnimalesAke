@@ -1,0 +1,155 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos de la tarjeta */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* Estilos del encabezado */
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #4a90e2;
+}
+
+/* Estilos del formulario */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #2c3e50;
+    background: #f8f9fa;
+}
+
+/* Contenedor del botón cancelar */
+a {
+    display: inline-block;
+    color: #95a5a6;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #7f8c8d;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+/* Estilos de botones */
+.btn {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #666;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+.btn-secondary:hover {
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    color: white;
+    width: 200px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    width: 200px;
+}
+
+/* Estilos para los indicadores de campo requerido */
+.text-danger {
+    color: #dc3545;
+}
+
+.text-danger::after {
+    content: "*";
+    color: #dc3545;
+    margin-left: 2px;
+}
+
+/* Utilidades de texto */
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Utilidad de sombra */
+.shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,190 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el título */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+/* Estilos para los grupos de campos */
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para las etiquetas y campos */
+label {
+    display: block;
+    font-weight: 500;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos mejorados para los campos de información */
+input[name="nombre"],
+input[name="especie"],
+input[name="habitat"] {
+    width: 90%;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+input[name="nombre"]:focus,
+input[name="especie"]:focus,
+input[name="habitat"]:focus {
+    border-color: #3498db;
+    background-color: white;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+    outline: none;
+}
+
+/* Estilo para el texto de carga */
+input[value="Cargando…"] {
+    font-style: italic;
+    color: #95a5a6;
+}
+
+/* Estilos para el enlace Cancelar */
+a {
+    display: inline-block;
+    color: #95a5a6;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #7f8c8d;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+/* Estilos para el botón Guardar */
+#guardar {
+    background-color: #3498db;
+    border: none;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+#guardar:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* Estilos para el botón Eliminar */
+#eliminar {
+    background-color: #e74c3c;
+    border: none;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    width: auto;
+}
+
+#eliminar:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* Estilos para el contenedor de botones */
+p:last-child {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Estilo para campos requeridos */
+label::after {
+    content: ' *';
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    body {
+        padding: 1rem;
+    }
+    
+    form {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #guardar,
+    #eliminar {
+        padding: 10px 30px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    input[name="nombre"],
+    input[name="especie"],
+    input[name="habitat"] {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
